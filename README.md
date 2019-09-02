@@ -1,3 +1,3 @@
-# kotlin-coursera-week-2
+# kotlin-coursera
 
-Kotlin mastermind personal solution from Coursera platform https://www.coursera.org/learn/kotlin-for-java-developers
+Kotlin personal solutions from Coursera platform https://www.coursera.org/learn/kotlin-for-java-developers
