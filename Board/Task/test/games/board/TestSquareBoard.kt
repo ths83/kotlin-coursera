@@ -1,6 +1,9 @@
-package board
+package games.board
 
+import board.Cell
+import board.Direction
 import board.Direction.*
+import board.createSquareBoard
 import org.junit.Assert
 import org.junit.FixMethodOrder
 import org.junit.Test
@@ -11,8 +14,7 @@ class TestSquareBoard {
     @Test
     fun test00AllCells() {
         val board = createSquareBoard(2)
-        val allCells = board.getAllCells()
-        val cells = allCells.sortedWith(compareBy<Cell> { it.i }.thenBy { it.j })
+        val cells = board.getAllCells().sortedWith(compareBy<Cell> { it.i }.thenBy { it.j })
         Assert.assertEquals("[(1, 1), (1, 2), (2, 1), (2, 2)]", cells.toString())
     }
 
